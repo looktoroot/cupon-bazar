@@ -24,7 +24,7 @@ const Coupon = ({
     couponPrice,
     ...rest
 }) => (
-    <Box bg="gray.0" width="300px" height="300px" position="relative" onClick={onClick} {...rest}>
+    <Box bg="gray.0" width="300px" position="relative" onClick={onClick} {...rest}>
         <Box position="relative">
             <Box
                 height="117px"
@@ -36,18 +36,18 @@ const Coupon = ({
                 </Box>
             )}
         </Box>
-        <Box px="20px" pt="10px">
+        <Box px="20px" pt="15px">
             {!isEmpty(rating) && <Rating value={rating}>{`${rating} (${ratings} ratings)`}</Rating>}
             <Text
                 letterSpacing="0.4375px"
                 lineHeight="22px"
                 fontWeight="bold"
-                pt="10px"
-                fontSize="14px"
+                pt="18px"
+                fontSize="16px"
             >
                 {name}
             </Text>
-            <Text lineHeight="18px" fontWeight="200" pt="8px" fontSize="12px">
+            <Text lineHeight="18px" fontWeight="200" pt="8px" fontSize="13px">
                 <LinesEllipsis
                     text={longDescription}
                     maxLine="2"
@@ -56,7 +56,7 @@ const Coupon = ({
                     basedOn="letters"
                 />
             </Text>
-            <Text lineHeight="18px" fontWeight="normal" pt="8px" fontSize="12px">
+            <Text lineHeight="18px" fontWeight="bold" pt="8px" fontSize="12px">
                 {title}
             </Text>
             <Flex position="absolute" bottom="20px" width="100%" pr="40px">
