@@ -4,6 +4,7 @@ import {html} from '../../helpers';
 import Coupon from '../../components/coupon'
 import Counter from '../../components/shared/Counter';
 import Button from '../../components/shared/Button';
+import Input from '../../components/shared/Input';
 
 
 import './CouponForm.scss';
@@ -30,9 +31,72 @@ export default class CouponForm extends React.PureComponent {
                         </div>
                     </div>
                     <div className={bem.element('col-right')}>
-                        <div className={bem.element('form')}>
-                            form
-                        </div>
+                        <form
+                            className={bem.element('form')}
+                            action={''}
+                        >
+                            <div className={bem.element('form-row')}>
+                                <div className={bem.element('form-col')}>
+                                    <Input
+                                        label={'Image url'}
+                                        name={'imageUrl'}
+                                        placeholder={'http://'}
+                                    />
+                                </div>
+                            </div>
+                            <div className={bem.element('form-row')}>
+                                <div className={bem.element('form-col', 'third')}>
+                                    <Input
+                                        label={'Old price'}
+                                        name={'oldPrice'}
+                                    />
+                                </div>
+                                <div className={bem.element('form-col', 'third')}>
+                                    <Input
+                                        label={'New price'}
+                                        name={'newPrice'}
+                                    />
+                                </div>
+                                <div className={bem.element('form-col', 'third')}>
+                                    <Input
+                                        label={'Coupon price'}
+                                        name={'couponPrice'}
+                                    />
+                                </div>
+                            </div>
+                            <div className={bem.element('form-row')}>
+                                <div className={bem.element('form-col')}>
+                                    <Input
+                                        label={'Title'}
+                                        name={'title'}
+                                        placeholder={'http://'}
+                                    />
+                                </div>
+                            </div>
+                            <div className={bem.element('form-row')}>
+                                <div className={bem.element('form-col', 'third')}>
+                                    <Input
+                                        label={'Expiration date'}
+                                        name={'expirationDate'}
+                                    />
+                                </div>
+                                <div className={bem.element('form-col', '2-third')}>
+                                    <Input
+                                        label={'Location'}
+                                        name={'location'}
+                                    />
+                                </div>
+                            </div>
+                            <div className={bem.element('form-row')}>
+                                <div className={bem.element('form-col')}>
+                                    <Input
+                                        label={'Item url'}
+                                        name={'itemUrl'}
+                                        placeholder={'http://'}
+                                    />
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div className={bem.element('footer')}>

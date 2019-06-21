@@ -5,7 +5,6 @@
 
   &__inner {
     display: flex;
-    align-items: center;
   }
 
   &__col-left {
@@ -13,14 +12,49 @@
     max-width: 307px;
   }
 
+  &__col-right {
+    flex-grow: 1;
+    min-width: 400px;
+  }
+
   &__coupon-card {
-    margin-bottom: 30px;
+    margin-bottom: 44px;
     border: 1px solid #EFF0F2;
   }
 
   &__counter {
     display: flex;
     justify-content: center;
+  }
+
+  &__form {
+
+  }
+
+  &__form-row {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__form-col {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    &_third {
+      width: 31%;
+    }
+
+    &_2-third {
+      width: 66%;
+    }
+
   }
 
   &__footer {

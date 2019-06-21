@@ -1,0 +1,21 @@
+.Input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 8xp;
+  }
+
+  &__input {
+    padding: 8px 18px;
+    background: #F9F9F9;
+    border: 1px solid #D7DBEC;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
