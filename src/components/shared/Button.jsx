@@ -11,9 +11,9 @@ export default class Button extends React.PureComponent {
     render() {
         return (
             <button
-                className={bem.block({
+                className={bem(bem.block({
                     action: this.props.action,
-                })}
+                }), this.props.className)}
                 type={this.props.type || 'button'}
                 onClick={() => this.props.onHangleClick()}
             >

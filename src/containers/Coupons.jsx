@@ -18,7 +18,7 @@ const Coupons = ({ onDialogOpen, coupons }) =>
             <Box as={Card}>
                 <Coupon
                     width={{ 0: '100%', md: '300px' }}
-                    height="300px"
+                    height="348px"
                     {...coupon}
                     onClick={() => onDialogOpen(coupon)}
                 />
