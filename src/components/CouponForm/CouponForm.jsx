@@ -3,6 +3,8 @@ import React from 'react';
 import {html} from '../../helpers';
 import Coupon from '../../components/coupon'
 import Counter from '../../components/shared/Counter';
+import Button from '../../components/shared/Button';
+
 
 import './CouponForm.scss';
 
@@ -34,7 +36,14 @@ export default class CouponForm extends React.PureComponent {
                     </div>
                 </div>
                 <div className={bem.element('footer')}>
-                    footer
+                    <Button
+                        action={'save'}
+                        label={'Save'}
+                    />
+                    <Button
+                        action={'cancel'}
+                        label={'Cancel'}
+                    />
                 </div>
             </div>
         );
