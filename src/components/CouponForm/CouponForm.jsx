@@ -1,8 +1,7 @@
 import React from 'react';
 
 import {html} from '../../helpers';
-import CouponCard from './views/CouponCard';
-
+import Coupon from '../../components/coupon'
 
 import './CouponForm.scss';
 
@@ -17,17 +16,12 @@ export default class CouponForm extends React.PureComponent {
                 <div className={bem.element('inner')}>
                     <div className={bem.element('col-left')}>
                         <div className={bem.element('coupon-card')}>
-                            <CouponCard
-                                imageUrl={'https://ireplace.ru/images/companies/1/goods/airpods-ireplace.jpg.pagespeed.ce.4kcJXThlfK.jpg'}
-                                ratingInfo={'active for 1 month'}
-                                rating={5}
-                                title={'Apple AirPods'}
-                                description={'Famous airpods headphones from the company Apple'}
-                                info={'Megaplaza'}
-                                wavesPrice={2}
-                                usdPrice={159}
-                                usdDiscountPrice={143.1}
+                            <Coupon
+                                width={{ 0: '100%', md: '300px' }}
+                                height="300px"
+                                {...this.props.coupon}
                             />
+
                         </div>
                         <div className={bem.element('counter')}>
                             counter
