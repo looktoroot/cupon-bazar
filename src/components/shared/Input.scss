@@ -7,7 +7,6 @@
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
-    margin-bottom: 8xp;
   }
 
   &__input {
@@ -17,5 +16,9 @@
     border-radius: 4px;
     font-size: 14px;
     line-height: 22px;
+
+    &:focus {
+      border-color: #2EB4FF;
+    }
   }
 }
