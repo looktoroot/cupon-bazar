@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 
 const fs = require('fs');
@@ -44,6 +45,9 @@ const build = async () => {
             filename: 'index.html',
             template: 'src/template/index.html',
         }),
+        new MiniCssExtractPlugin({
+            filename: 'style.css',
+        }),
     ].filter(x => x !== false);
 
     const entry = ['@babel/polyfill', './src/index.jsx'];
@@ -73,6 +77,18 @@ const build = async () => {
                 {
                     loader: 'svg-inline-loader',
                     test: /\.svg$/,
+                },
+                {
+                    test: /\.scss$/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        {
+                            loader: 'css-loader'
+                        },
+                        {
+                            loader: 'sass-loader'
+                        },
+                    ]
                 },
             ],
         },

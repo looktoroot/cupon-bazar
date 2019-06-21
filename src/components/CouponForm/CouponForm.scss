@@ -1,0 +1,15 @@
+.CouponForm {
+  max-width: 936px;
+  padding: 58px;
+  background-color: #fff;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__col-left {
+    margin-right: 32px;
+    max-width: 307px;
+  }
+}
