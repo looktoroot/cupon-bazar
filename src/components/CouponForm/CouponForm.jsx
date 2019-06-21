@@ -22,7 +22,22 @@ export default class CouponForm extends React.PureComponent {
                             <Coupon
                                 width={{ 0: '100%', md: '300px' }}
                                 height="300px"
-                                {...this.props.coupon}
+                                couponPrice={2}
+                                couponTerm="WAVES"
+                                discount={10}
+                                id={1}
+                                image="https://cdn1.savepice.ru/uploads/2019/6/5/f083cab4bf636dbe751636671a40dbd0-full.png"
+                                longDescription="Famous airpods headphones from the company Apple"
+                                longTitle="Lorem Impusm..."
+                                name="Apple AirPods"
+                                newPrice="143.1"
+                                oldPrice="159"
+                                priceTerm="$"
+                                rating={4}
+                                ratings={195}
+                                shortDescription="The best, bla bla bla"
+                                status="purchased"
+                                title="Megaplaza"
                             />
 
                         </div>

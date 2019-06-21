@@ -56,7 +56,7 @@ const Coupon = ({
                     basedOn="letters"
                 />
             </Text>
-            <Text lineHeight="18px" fontWeight="normal" pt="8px" fontSize="12px">
+            <Text lineHeight="18px" fontWeight="bold" pt="8px" fontSize="12px">
                 {title}
             </Text>
             <Flex position="absolute" bottom="20px" width="100%" pr="40px">
