@@ -18,6 +18,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/f083cab4bf636dbe751636671a40dbd0-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 2,
@@ -38,6 +54,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 3,
@@ -58,6 +90,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 4,
@@ -78,6 +126,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 5,
@@ -98,6 +162,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 6,
@@ -118,6 +198,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 7,
@@ -138,6 +234,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 8,
@@ -158,6 +270,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 9,
@@ -178,6 +306,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 10,
@@ -198,6 +342,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 11,
@@ -218,6 +378,22 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     },
     {
         id: 12,
@@ -238,5 +414,21 @@ export const coupons = [
         status: 'purchased',
         image:
             'https://cdn1.savepice.ru/uploads/2019/6/5/3eaf1f99a32f8045847ac9f02eb81344-full.png',
+        email: 'el@electronik.com',
+        web_page_url: 'electronik.com',
+        categories: [
+            {
+                id: 'electronics',
+                label: 'Electronics',
+            },
+            {
+                id: 'apple',
+                label: 'Apple',
+            },
+            {
+                id: 'accessories',
+                label: 'Accessories',
+            },
+        ],
     }
 ];
