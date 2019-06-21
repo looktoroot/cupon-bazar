@@ -2,35 +2,33 @@ import React from 'react';
 
 import * as Controls from './controls';
 
-import { Box, Flex, Text } from '../shared';
+import Categories from '../../components/Categories';
 import Coupon from '../coupon';
 
-const Dialog = ({ coupon, onClose, onSubmit }) => (
-    <Box width="600px">
-        <Flex bg="gray.0" p="16px">
-            <Box flex={1}>
+import {html} from '../../helpers';
+
+import './Dialog.scss';
+
+const bem = html.bem('Dialog');
+
+const Dialog = ({coupon, onClose, onSubmit}) => (
+    <div className={bem.block()}>
+        <div className={bem.element('inner')}>
+            <div className={bem.element('coupon')}>
                 <Coupon {...coupon} />
-            </Box>
-
-            <Box pl="16px">
-                <Controls.SmallLogo />
-                <Text lineHeight="22px" fontWeight="bold" pt="10px" fontSize="22px">
-                    Lorem Impusm is dummy text
-                </Text>
-                <Text lineHeight="18px" pt="10px" fontSize="14px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore
-                </Text>
-            </Box>
-        </Flex>
-
-        <Controls.Footer>
-            <Controls.Button onClick={onClose}>Cancel</Controls.Button>
-            <Controls.Button color="blue.0" onClick={onSubmit}>
-                Buy
-            </Controls.Button>
-        </Controls.Footer>
-    </Box>
+            </div>
+            <div className={bem.element('info')}>
+                <Controls.SmallLogo/>
+                <Categories categories={coupon.categories} />
+                {coupon.email && (
+                    <div className={bem.element('email')}>{coupon.email}</div>
+                )}
+                {coupon.webPageUrl && (
+                    <div className={bem.element('site')}>{coupon.webPageUrl}</div>
+                )}
+            </div>
+        </div>
+    </div>
 );
 
 export default Dialog;
