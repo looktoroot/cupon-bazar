@@ -4,6 +4,8 @@ import * as Controls from './controls';
 
 import Categories from '../../components/Categories';
 import Coupon from '../coupon';
+import Counter from '../shared/Counter';
+import Button from '../shared/Button';
 
 import {html} from '../../helpers';
 
@@ -18,16 +20,58 @@ const Dialog = ({coupon, onClose, onSubmit}) => (
                 <Coupon {...coupon} />
             </div>
             <div className={bem.element('info')}>
-                <Controls.SmallLogo/>
-                <Categories categories={coupon.categories} />
-                {coupon.email && (
-                    <div className={bem.element('email')}>{coupon.email}</div>
+                <div className={bem.element('logo')}>
+                    <Controls.SmallLogo/>
+                </div>
+                <div className={bem.element('categories')}>
+                    <Categories categories={coupon.categories}/>
+                </div>
+                {(coupon.email || coupon.webPageUrl) && (
+                    <div className={bem.element('contacts')}>
+                        {coupon.email && (
+                            <div className={bem.element('contacts-inner')}>
+                                {'E-mail: '}
+                                <a
+                                    className={bem.element('contacts-link')}
+                                    href={`mailto:${coupon.email}`}
+                                >
+                                    {coupon.email}
+                                </a>
+                            </div>
+                        )}
+                        {coupon.webPageUrl && (
+                            <div className={bem.element('contacts-inner')}>
+                                {'Web page: '}
+                                <a
+                                    className={bem.element('contacts-link')}
+                                    href={coupon.webPageUrl}
+                                >
+                                    {coupon.webPageUrl}
+                                </a>
+                            </div>
+                        )}
+                    </div>
                 )}
-                {coupon.webPageUrl && (
-                    <div className={bem.element('site')}>{coupon.webPageUrl}</div>
-                )}
+                <div className={bem.element('quantity')}>
+                    <Counter/>
+                </div>
+                <div className={bem.element('actions')}>
+                    <Button
+                        className={bem.element('action')}
+                        label='Cancel'
+                        action='cancel'
+                        onHangleClick={onClose}
+                    />
+                    <Button
+                        className={bem.element('action')}
+                        label='Buy'
+                        action='save'
+                        onHangleClick={() => console.log('buy action')}
+                    />
+                </div>
             </div>
         </div>
+        <a className={bem.element('read-more')} href="javascript:void(0)">Read more...</a>
     </div>
 );
 
