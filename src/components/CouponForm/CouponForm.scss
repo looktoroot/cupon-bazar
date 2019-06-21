@@ -12,4 +12,14 @@
     margin-right: 32px;
     max-width: 307px;
   }
+
+  &__coupon-card {
+    margin-bottom: 30px;
+    border: 1px solid #EFF0F2;
+  }
+
+  &__counter {
+    display: flex;
+    justify-content: center;
+  }
 }

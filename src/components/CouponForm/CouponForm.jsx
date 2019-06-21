@@ -2,9 +2,9 @@ import React from 'react';
 
 import {html} from '../../helpers';
 import Coupon from '../../components/coupon'
+import Counter from '../../components/shared/Counter';
 
 import './CouponForm.scss';
-
 
 const bem = html.bem('CouponForm');
 
@@ -24,7 +24,7 @@ export default class CouponForm extends React.PureComponent {
 
                         </div>
                         <div className={bem.element('counter')}>
-                            counter
+                            <Counter/>
                         </div>
                     </div>
                     <div className={bem.element('col-right')}>
